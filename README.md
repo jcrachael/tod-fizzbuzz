@@ -12,11 +12,11 @@ The output will be a list of numbers from 1 to the input, but:
 - each multiple of 3 AND 5 is "FizzBuzz".
 
 ### Pseudocode
-Prompt user to input a number
-When user inputs a number
-Loop from 1 to the user's input number
-    For each number in the loop:
-        If the current number is divisible by 3 then print "Fizz"
-        If the current number is divisible by 5 then print "Buzz"
-        If the current number is divisible by 3 AND 5 then print "FizzBuzz"
-        Else print the current number
+1. Prompt user to input a number
+2. When user inputs a number
+3. Loop from 1 to the user's input number
+    a) For each number in the loop:
+        i) If the current number is divisible by 3 then print "Fizz"
+        ii) If the current number is divisible by 5 then print "Buzz"
+        iii) If the current number is divisible by 3 AND 5 then print "FizzBuzz"
+        iv) Else print the current number
