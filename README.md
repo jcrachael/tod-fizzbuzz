@@ -27,3 +27,9 @@ The output will be a list of numbers from 1 to the input, but:
         iii) If the current number is divisible by 3 AND 5 then print "FizzBuzz"
 
         iv) Else print the current number
+
+### To-Do:
+1. Fix CSS styling for a more pleasing colour scheme and typeface
+2. Add JS timing effects to text so each text element appears 0.2-0.5s after the previous one
+
+Last updated: 19 October 2022
