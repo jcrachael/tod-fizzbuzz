@@ -1,6 +1,7 @@
 # FizzBuzz
 ## A simple javascript counting game.
 Live demo: https://jcrachael.github.io/tod-fizzbuzz/
+
 Project sourced from The Odin Project: https://www.theodinproject.com/lessons/foundations-problem-solving
 
 ### The problem
