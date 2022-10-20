@@ -29,7 +29,9 @@ The output will be a list of numbers from 1 to the input, but:
         iv) Else print the current number
 
 ### To-Do:
-1. Fix CSS styling for a more pleasing colour scheme and typeface
-2. Add JS timing effects to text so each text element appears 0.2-0.5s after the previous one
+1. Add JS timing effects to text so each text element appears 0.2-0.5s after the previous one ✓ 20/10/22
+2. Make text elements appear inline on screen  ✓ 20/10/22
+3. Fix CSS styling for a more pleasing colour scheme and typeface
+4. Exchange 'alert' prompt box for a HTML form prompt box for user's input
 
-Last updated: 19 October 2022
+Last updated: 20 October 2022

@@ -4,6 +4,10 @@ body {
     color:#eae287;
 }
 
+p {
+    display: inline;
+}
+
 .container {
     padding: 0px 30px;
 }
