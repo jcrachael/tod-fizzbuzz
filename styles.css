@@ -1,37 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Poppins:ital,wght@0,700;1,700&display=swap');
+
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #003049;
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color: #2296d4;
     color:#eae287;
 }
 
 p {
     display: inline;
+    font-size: 24pt;
+  
+}
+
+button {
+    margin-top: 50px;
+    border-radius: 25px;
+    width: 150px;
+    height: 75px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18pt;
+    
+    background-color: #2296d4;
+    border:2px #eae287 solid;
+    color: #eae287;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f77f00;
+    color: white;
+    border-color: white;
+    font-style: italic;
+    transform: skew(-10deg, 0deg);
+    
 }
 
 .container {
-    padding: 0px 30px;
+    text-align: center;
+    width: 75%;
+    margin: auto;
 }
 
 h1 {
     text-align: center;
+    font-size: 64pt;
 }
 
 .fizzbuzz {
-    color: #d62828;
+    color: #d10101;
     font-weight: bolder;
     font-style: italic;
-    font-size: xx-large;
+    font-size: 48pt;
+    text-shadow: 0px 0px 75px rgba(255, 255, 255, 5);
 }
 
 .fizz {
     color: #fcbf49;
     font-weight: bold;
-    font-size: large;
+    font-size: 28pt;
 }
 
 .buzz {
     color: #f77f00;
     font-weight: bold;
     font-style: italic;
-    font-size: larger;
+    font-size: 36pt;
 }

@@ -1,35 +1,52 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
 
-    // Prompt user for input via pop-up box and store as variable called 'answer'
-    let answer = parseInt(prompt("Please enter a number to FizzBuzz: ")); 
+
 
     // get the div
     let container = document.getElementById('log');
 
+    // hide button
+    let button = document.querySelector('button');
+    button.style.display = 'none';
+    button.addEventListener('click', getInput);
+
+    // define functions
     function fizzBuzz() {
-        container.innerHTML += "<p class='fizzbuzz'>FizzBuzz!</p>";
+        container.innerHTML += "<p class='fizzbuzz'>&nbsp;FizzBuzz!&nbsp;</p>";
     };
 
     function fizz() {
-        container.innerHTML += "<p class='fizz'>Fizz!</p> ";
+        container.innerHTML += "<p class='fizz'>fizz!&nbsp;</p> ";
     };
 
     function buzz() {
-        container.innerHTML += "<p class='buzz'>Buzz!</p> ";
+        container.innerHTML += "<p class='buzz'>buzz!&nbsp;</p> ";
     };
 
     function enterNumber(x) {
         container.innerHTML += "<p>" + x + "...</p>" + "\n\n";
     }
     
-
-    function lastWords() {
-        container.innerHTML += "<p>&nbsp;You're all FizzBuzzed out!</p>\n\n";
+    function waiting() {
+        container.innerHTML += '<br><p>...</p>';
     }
 
-   
+    function lastWords() {
+        container.innerHTML += "<br><p>...You're all FizzBuzzed out!</p>\n\n";
+    }
 
-    // Loop from 1 to 'answer' incrementing by 1
+    function playAgain() {
+        container.innerHTML += "<br><p>Would you like to FizzBuzz again?</p><br>";
+        button.style.display = 'inline';
+    }
+
+    // get input
+    function getInput () {
+        let answer = parseInt(prompt("Please enter a number to FizzBuzz: ")); 
+        container.innerHTML = ''
+        button.style.display = 'none'
+        
+        // Loop from 1 to 'answer' incrementing by 1
     for (let i = 1; i <= answer; i++) {
         setTimeout(function timer() {
             // code here
@@ -50,7 +67,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
         
     };
     let duration = answer * 500 + 500;
-    setTimeout(lastWords, duration);
+    let duration2 = duration + 500;
+    let duration3 = duration2 + 500;
+    setTimeout(waiting, duration);
+    setTimeout(lastWords, duration2);
+    setTimeout(playAgain, duration3);
+
+
+    }
+
+    
+getInput();
+
+    
+   
+
+    
+    
     
 
     
